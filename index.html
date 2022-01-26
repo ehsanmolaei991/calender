@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calender</title>
+    <link href="./css/all.min.css" rel="stylesheet" />
+    <link href="./css/animate.css" rel="stylesheet" />
+    <link href="./css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body class="Flex HCenter Vcenter" style="height: 100vh">
+    <div class="Calender Flex HCenter VCenter Col">
+      <div class="row HeaderCalender HCenter VCenter">
+        <div
+          class="NextMonth ISansBold Pointer animated fadeInLeft"
+          id="NextMonth"
+        >
+          <!-- Next Month -->
+        </div>
+        <div class="Details animated fadeInDown">
+          <p class="ISansBold">
+            <span id="YearDetails" class="ISansBold"></span
+            ><span id="MonthDetails"></span>
+          </p>
+          <p class="ISansBold SubCalDate"></p>
+          <p class="ISansBold SubCalDate"></p>
+        </div>
+        <div
+          class="PrevMonth ISansBold Pointer animated fadeInRight"
+          id="PrevMonth"
+        >
+          <!-- Prev Month -->
+        </div>
+      </div>
+
+      <div class="WeekNumber Flex Row animated fadeIn" id="weekDays"></div>
+
+      <div class="Main W100" id="Main"></div>
+      <button
+        type="button"
+        id="goToday"
+        class="btn btn-primary animated fadeInUp ISansBold"
+      ></button>
+
+      <!-- If U Want To Select Locale Use This Btn -->
+
+      <!-- <div>  -->
+    </div>
+    <!-- Scripts Start -->
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/moment-with-locales.js"></script>
+    <script src="./js/moment-jalaali.js"></script>
+    <script src="./js/moment-hijri.js"></script>
+    <script src="./js/persian.min.js"></script>
+    <script src="./js/calendar.js"></script>
+  </body>
+</html>

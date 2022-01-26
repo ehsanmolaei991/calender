@@ -1,0 +1,302 @@
+body,
+html {
+  height: 100%;
+  margin: 0px !important;
+  padding: 0px !important;
+}
+p {
+  margin: 0;
+  margin-bottom: 0px;
+}
+
+a,a:link,a:hover,a:active,a:visited{
+	text-decoration:none !important; color:inherit;
+}
+/* Variable */
+:root {
+  --white: white;
+  --black: black;
+  --darkGray: #35495e;
+  --darkGreen: #347474;
+  --ligthGreen : #63b7af;
+  --blue :#3282b8;
+  --darkBlue :#14397F;
+  --lightBlue :#bbe1fa;
+  --yellow : #E7B415;
+}
+
+/* Add Font */
+@font-face {
+  font-family: "ISansBold";
+  src: url("../fonts/ISansBold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/ISansBold.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/ISansBold.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/ISansBold.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/ISansBold.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/ISansBold.svg#ISansBold") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "ISans";
+  src: url("../fonts/ISans.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/ISans.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/ISans.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/ISans.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/ISans.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/ISans.svg#ISans") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "URW";
+  src: url("../fonts/URWGeometricArabic-Regular.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/URWGeometricArabic-Regular.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/URWGeometricArabic-Regular.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/URWGeometricArabic-Regular.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/URWGeometricArabic-Regular.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/URWGeometricArabic-Regular.svg#URWGeometricArabic-Regular") format("svg"); /* Legacy iOS */
+}
+@font-face {
+  font-family: "URWBold";
+  src: url("../fonts/URWGeometricArabic-Bold.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/URWGeometricArabic-Bold.eot?#iefix") format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/URWGeometricArabic-Bold.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/URWGeometricArabic-Bold.woff") format("woff"),
+    /* Pretty Modern Browsers */ url("../fonts/URWGeometricArabic-Bold.ttf") format("truetype"),
+    /* Safari, Android, iOS */ url("../fonts/URWGeometricArabic-Bold.svg#URWGeometricArabic-Bold") format("svg"); /* Legacy iOS */
+}
+/* Main Css */
+.ISansBold {
+  font-family: "ISansBold";
+}
+.ISans {
+  font-family: "ISans";
+}
+.Arial{
+  font-family: Arial;
+  font-weight: bold;
+}
+.URWBold {
+  font-family: "URWBold";
+}
+.URW {
+  font-family: "URW";
+}
+.row{
+  margin: 0;
+}
+.Flex {
+  display: flex;
+}
+.HCenter {
+  justify-content: center;
+}
+.VCenter {
+  align-items: center;
+}
+.Col {
+  flex-direction: column;
+}
+.Row {
+  flex-direction: row;
+}
+.Rtl {
+  direction: rtl;
+}
+.Ltr {
+  direction: ltr;
+}
+.TRight {
+  text-align: right;
+}
+.TLeft {
+  text-align: left;
+}
+.TCenter {
+  text-align: center;
+}
+.TJus {
+  text-align: justify;
+}
+.W100 {
+  width: 100%;
+}
+.H100 {
+  height: 100%;
+}
+.Pointer {
+  cursor: pointer;
+}
+.Transition{
+  transition: 0.5s;
+}
+
+
+
+/* Start */
+.Calender{
+  /* box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); */
+  width: 80%;
+  height: 100%;
+  /* background-color: rgb(28, 24, 61); */
+}
+.HeaderCalender{
+  justify-content: space-between;
+  width: 100%;
+}
+#YearDetails{
+  margin: 0px 10px;
+}
+.Details{
+  padding: 10px 15px;
+  border: 1.5px solid var(--darkBlue);
+  border-radius: 10px;
+}
+.Details > p{
+  color: var(--darkBlue);
+}
+.NextMonth,.PrevMonth{
+  border-radius: 10px;
+  border: 1.5px solid var(--yellow);
+  padding: 1.5vh 1.5vw;
+  color: var(--yellow);
+  transition: 0.5s;;
+}
+.NextMonth:hover,.PrevMonth:hover{
+  border-radius: 10px;
+  border: 1.5px solid var(--white);
+  padding: 1.5vh 1.5vw;
+  color: var(--white);
+  background-color: var(--yellow);
+}
+.WeekNumber{
+  direction: rtl;
+  justify-content: space-between;
+  width: 100%;
+  margin: 15px 0px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 1.5px solid var(--yellow);
+}
+.WeekNumber > div{
+  color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14.285714%;
+}
+.Main{
+  display: flex;
+  flex-direction: row;
+  direction: rtl;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.colOfCalender{
+  position: relative;
+  display: flex;
+  direction: rtl;
+  justify-content: center;
+  align-items: center;
+  width: 14%;
+  padding: 3vh 4vw;
+  background-color: rgba(0, 0, 0, 0.02);
+  border-radius: 10px;
+  margin: 2px 0px;
+  cursor: pointer;
+  transition: 0.2s;
+  color: var(--darkGreen);
+  font-size: 20px;
+}
+.colOfCalender:hover{
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+#goToday{
+  width: 100%;
+  margin: 15px 0px;
+  padding: 1.5vh 10px;
+  outline: none !important;
+  box-shadow: none !important;
+  font-family: 'ISansBold';
+  background-color: transparent !important;
+  color: var(--darkBlue);
+  border-color: 1.5px solid var(--darkBlue) !important;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+#goToday:hover{
+  background-color: var(--darkBlue) !important;
+  border-color: 1.5px solid  var(--white) !important;
+  color: var(--white);
+}
+.JalaliDate{
+  font-family: "ISansBold";
+}
+.JalaliDate #Gregorian{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  font-family: 'Arial' !important;
+}
+.JalaliDate #Hijri{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  font-family: 'URW' !important;
+}
+.HijriDate{
+  font-family: 'URWBold' !important;
+}
+.HijriDate #Gregorian{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  font-family: 'Arial' !important;
+}
+.HijriDate #Jalali{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  font-family: 'ISans' !important;
+}
+.GregorianDate{
+  font-family: 'Arial' !important;
+  font-weight: bold;
+}
+.GregorianDate #Hijri{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+  font-family: 'URW' !important;
+}
+.GregorianDate #Jalali{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 14px;
+  font-family: 'ISans' !important;
+}
+.Today{
+  background-color: var(--yellow) !important;
+  color: white !important;
+}
+@media only screen and (max-width: 700px) {
+  .GregorianDate #Hijri{display: none;}
+  .GregorianDate #Jalali{display: none;}
+  .SubCalDate{display: none;}
+  .Calender{width: 90%;}
+  .WeekNumber div{text-overflow: ellipsis;white-space: nowrap;overflow: hidden;}
+  .HijriDate #Gregorian{display: none;}
+  .HijriDate #Jalali{display: none;}
+  .JalaliDate #Gregorian{display: none;}
+  .JalaliDate #Hijri{display: none;}
+  .colOfCalender{padding: 10px;font-size: 16px;}
+  .Details > p{font-size: 13px !important;}
+  .Details{padding: 7px;}
+  .PrevMonth,.NextMonth{font-size: 12px !important;padding: 7px;}
+  #goToday{padding: 7px;font-size: 15px;}
+}
